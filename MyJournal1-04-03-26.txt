@@ -17,8 +17,9 @@ Division Operator automatically gaves floats.
 
 
 String Concatenation - ✅
-
 this will show you how to combines 2 or more string or words using +.
 
 
 
+Converting Data types into String for Concatenation. - ✅
+in this part we will see how to use str() to convert any Data types into string.
