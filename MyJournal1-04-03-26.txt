@@ -1,0 +1,4 @@
+Learning simple python code or functions.
+
+print first "Hello World!". - ✅
+
