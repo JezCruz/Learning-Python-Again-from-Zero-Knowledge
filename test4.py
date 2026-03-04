@@ -14,7 +14,7 @@ print(fname + ' ' + lname)
 #output: Jezreel Cruz
 
 
-#basic and easiest way example
+#basic and easiest way example. just to show you how to simplify.
 
 fname = "Jezreel"
 lname = "Cruz"

@@ -14,3 +14,11 @@ Numbers has 3 numeric data types:
 
 Division Operator automatically gaves floats.
 
+
+
+String Concatenation - ✅
+
+this will show you how to combines 2 or more string or words using +.
+
+
+
