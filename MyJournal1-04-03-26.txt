@@ -3,3 +3,13 @@ Learning simple python code or functions.
 print first "Hello World!". - ✅
 
 add variable and values then print. - ✅
+
+
+Python fundamentals: Data Types of Numbers.
+
+Numbers has 3 numeric data types:
+ - integer - integer
+ - floating point - floats
+ - complex numbers
+
+
