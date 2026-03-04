@@ -45,3 +45,27 @@ print(z)
 
 
 #so Division Operator automatically we called that float.
+
+
+z = 27//5
+print(z)
+#output: 5
+
+#so if we use // Divides 2 values, will output a whole number without the remainder.
+
+
+
+#Modulo Operator or % Divides 2 values, will output the remainder as a whole number.
+
+z = 24%5
+print(z)
+#output: 4
+
+
+
+#Exponentiation Opertor or ** Raises a value to an exponent (read this as raised to).
+
+x = 10**5
+print(x)
+#output: 100000
+ 
