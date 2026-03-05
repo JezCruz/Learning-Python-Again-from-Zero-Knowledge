@@ -27,8 +27,32 @@ in this part we will see how to use str() to convert any Data types into string.
 
 
 05-03-26 - MyJournal.
-Getting User Inputs Using The Input() Function. - 
+Getting User Inputs Using The Input() Function. - ✅
 in this part we need to try Input() function. inestead of adding variables.
 example:
     fname = input("Enter Your First Name: ")
     print(fname)
+
+
+
+Converting Data Types - ✅
+example: 
+    print('fishball: 15 pesos per sticks')
+
+    numstick = input('how many sticks? ')
+    cash = input('how much your cash? ')
+
+    total = int(numstick) * 15
+    change = cash - total
+
+    print('your order is '+ numstick + ' sticks of fishballs' + ' total of ' + total + ' your cash is ' + cash + ' so you have change of ' + change)
+
+    #the fullcode with float() and round() in test7.py
+
+
+reflection:
+    I learned how to add int() as input function.
+    I learned how to add float() for decimal values.
+    I learned how to use round() function to round the total, cash, and change to 2 decimal places for better presentation.
+
+
