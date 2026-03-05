@@ -23,3 +23,12 @@ this will show you how to combines 2 or more string or words using +.
 
 Converting Data types into String for Concatenation. - ✅
 in this part we will see how to use str() to convert any Data types into string.
+
+
+
+05-03-26 - MyJournal.
+Getting User Inputs Using The Input() Function. - 
+in this part we need to try Input() function. inestead of adding variables.
+example:
+    fname = input("Enter Your First Name: ")
+    print(fname)
