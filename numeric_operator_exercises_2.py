@@ -4,8 +4,10 @@
 firstname = input("What is your first name? ")
 lastname = input("What is your last name? ")
 year_of_birth = int(input("What year were you born? "))
+present_year = int(input("What is the present year? "))
 
-age = 2026 - year_of_birth
+#formula to calculate age
+age = present_year - year_of_birth
 
 print("Full Name: "+ firstname + " " + lastname)
 print("Age: " + str(age))
