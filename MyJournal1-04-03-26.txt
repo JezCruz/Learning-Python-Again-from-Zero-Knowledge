@@ -56,3 +56,12 @@ reflection:
     I learned how to use round() function to round the total, cash, and change to 2 decimal places for better presentation.
 
 
+
+Comparison Operators - ✅
+    Operator  | Description
+    ==          Equal to
+    <           Less than 
+    >           Greater than
+    <=          Less than or Equal
+    >=          Greater than or Equal
+    !=          Not Equal to
