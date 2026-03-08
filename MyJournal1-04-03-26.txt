@@ -67,3 +67,19 @@ Comparison Operators - ✅
     !=          Not Equal to
 
 
+
+
+Logical Operators - ✅
+    Logical Operator:  |  Description:                |  Example:
+    and                |  if x and y are true = True  |  x and y
+    or                 |  if x or y are true = True   |  x or y
+    not                |  if x is false = True        |  not x
+
+        and - in this logical operator if the two statement are "True" the output is "True"
+        so if the one statement becomes "False" even the one is "True" the output will becomes "False".
+
+        or - in this logical operator if the statement are "True" and "False" the output will become "True".
+
+        not - in this logical operator if the statement are "True" if you use this operator, the output will become "False". (vise versa)
+
+
