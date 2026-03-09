@@ -83,3 +83,6 @@ Logical Operators - ✅
         not - in this logical operator if the statement are "True" if you use this operator, the output will become "False". (vise versa)
 
 
+
+
+If and Else-IF - ✅
