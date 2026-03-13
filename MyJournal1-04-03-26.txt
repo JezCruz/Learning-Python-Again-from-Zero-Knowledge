@@ -86,3 +86,62 @@ Logical Operators - ✅
 
 
 If and Else-IF - ✅
+(IF ELIF ELSE)
+    if → first condition
+    elif → additional conditions
+    else → kapag walang nag match
+
+
+
+
+11-03-26:
+
+Control Flow - 
+
+Loops:
+    for
+    while
+    break
+    continue
+
+example Loops:
+
+for:
+    for i in range(5):
+    print("Hello", i)
+
+example loop:
+    for i in range(5):
+    print("Hello")
+
+    Output:
+    Hello
+    Hello
+    Hello
+    Hello
+    Hello
+
+Explanation: range(5) = 0,1,2,3,4 
+- So loop runs 5 times.
+
+Example with numbers:
+    for i in range(1,6):
+    print(i)
+
+    Output:
+    1
+    2
+    3
+    4
+    5
+
+The stop value (6) is exclusive, meaning it is not included in the range.
+
+
+while example:
+    count = 1
+
+    while count <= 5:
+        print(count)
+        count += 1
+
