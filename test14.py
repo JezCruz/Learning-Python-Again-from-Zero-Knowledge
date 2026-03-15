@@ -59,7 +59,7 @@ print('\n')
 # ==============================
 # 
 # Hello Jezreel James Cruz!
-# Your are 22 years old.
+# You are 22 years old.
 # Category: Adult
 # 
 # State: You are Eligible to apply for Jobs.
