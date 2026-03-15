@@ -25,12 +25,12 @@ elif age >= 60:
     category = 'Senior'
 
 # Allowed or not Allowed Logic.
-if age >= 18 and age <= 59:
-    isAllowed = 'You are Eligible to apply for Jobs.'
-elif age <= 18:
+if age < 18:
     isAllowed = 'You are Not Allowed to apply for Jobs.'
-elif age >= 60:
-    isAllowed = 'You are Eligible to apply,\nbut Are you sure? you are too old :('
+elif age < 60:
+    isAllowed = 'You are Eligible to apply for Jobs.'
+else:
+    isAllowed = 'You are Eligible to apply,\nbut, Are you sure? you are too old :('
 
 print('\n')
 print('==============================')
