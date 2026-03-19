@@ -3,8 +3,8 @@
 msg = input('Enter Your Message: ')
 loop = int(input('How Many Loops? '))
 
-for i in range(loop):
-    print(msg)
+for i in range(1, loop +1):
+    print(i, msg)
 
 # Output:
 
