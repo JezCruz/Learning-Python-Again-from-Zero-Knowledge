@@ -5,6 +5,14 @@ import time
 while True:
 
     try:
+        print("""
+========= MENU =========
+1 - Coffee Outlet
+2 - Membership System
+3 - Access System
+0 - Exit
+========================
+""")
         selection = int(input("Choose Task by Typing Number 0-10: "))
 
         if selection == 0:
