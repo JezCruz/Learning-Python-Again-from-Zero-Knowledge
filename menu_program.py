@@ -16,10 +16,10 @@ while True:
         selection = int(input("Choose Task by Typing Number 0-10: "))
 
         if selection == 0:
-            print("\\"),time.sleep(1.5), print("| Exiting program... Thank you! |"),time.sleep(2), print("/")
+            print("\\"),time.sleep(1), print("| Exiting program... Thank you! |"),time.sleep(1.5), print("/")
             break
         
-        if selection == 1:
+        elif selection == 1:
             print("""
 ===========================================================  
 =================== Your on Selection 1 ===================
