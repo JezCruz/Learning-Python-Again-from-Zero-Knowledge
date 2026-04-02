@@ -1,7 +1,7 @@
 # read a text file using "r" = read
 
 with open("python-try/hello.txt", "r") as f:
-    print(f.read()) 
+    print(f.read())
 
 # Output:
 # Hello Jez!
