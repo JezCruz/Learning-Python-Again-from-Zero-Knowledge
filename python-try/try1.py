@@ -13,3 +13,5 @@ with open("python-try/hello.txt", "w") as f:
 # example you change the f.write("Hello Jez!") to f.write("Good Morning!")
 # he replace it from "Hello Jez!" to "Good Morning!"
 # because you try to run "w" = (write) again.
+
+# so "w" = write - is Overwrite / create new file
