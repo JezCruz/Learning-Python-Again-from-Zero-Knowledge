@@ -13,4 +13,4 @@ cars["color"] = "Cyan"
 
 
 for key, value in cars.items():
-    print(key, ":" ,value)
+    print(key, ":",value)
