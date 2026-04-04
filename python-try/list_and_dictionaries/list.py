@@ -1,4 +1,4 @@
-# Lists and Dictionaries
+# Lists and Dictionaries - list
 
 #task 1
 favorite_foods = ["adobo", "lechon", "ginataan"]
