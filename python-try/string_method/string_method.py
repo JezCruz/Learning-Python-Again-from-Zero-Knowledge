@@ -1,7 +1,7 @@
 # string method
 
+name = input("What is your name? ").strip().title()
 while True:
-    name = input("What is your name? ").strip().title()
     age = input("How old are you? ").strip()
     if age.isdigit():
         age = int(age)
