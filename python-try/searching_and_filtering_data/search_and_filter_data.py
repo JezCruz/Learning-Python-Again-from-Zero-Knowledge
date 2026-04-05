@@ -1,10 +1,11 @@
 # Search and Filter Data
 
-users = [
-    {"name": "Jez", "age": 20},
-    {"name": "Ana", "age": 21},
-    {"name": "Mark", "age": 19}
-]
+import json
+
+file_loc = "python-try/python-json/data-json/users_data.json"
+
+with open(file_loc, "r")as f:
+    users = json.load(f)
 
 search_name = input("Search User: ").strip().title()
 
@@ -12,8 +13,11 @@ found = False
 
 for user in users:
     if user["name"] == search_name:
-        print("Found:", user)
+        print("\n=-=-=-= User Found: =-=-=-=")
+        print("Name:", user["name"])
+        print("Age:", user["age"])
+        print()
         found = True
 
 if not found:
-    print("User not found")
+    print("\nUser not found\n")
