@@ -5,23 +5,48 @@ import json
 file_loc = "python-try/python-json/data-json/users_data.json"
 
 with open(file_loc, "r")as f:
-        users = json.load(f)
-        print(users)
+    users = json.load(f)
+    print(users)
+
 
 def hello():
-     print("Hello World!")
+    print("Hello World!")
+
 
 def ping():
-     print("pong!")
+    print("pong!")
+
 
 def read_data():
-     with open(file_loc, "r")as f:
-          read_users = json.load(f)
-          print("+++++++++++++ All Data +++++++++++++\n")
-          for user in read_users:
-               print("Name:",user["name"])
-               print("Age:",user["age"])
-               print()
+    with open(file_loc, "r")as f:
+        read_users = json.load(f)
+        print("+++++++++++++ All Data +++++++++++++\n")
+        for user in read_users:
+            print("Name:",user["name"])
+            print("Age:",user["age"])
+            print()
+
+
+def add_user():
+    print("\n+ = + = + = Add New User = + = + = +\n")
+
+    name = input("Enter Name: ").strip().title()
+
+    while True:
+        age = input("Enter Age: ").strip()
+        if age.isdigit():
+            age = int(age)
+            break
+        else:
+            print("Invalid Input Age Numbers Only.")
+    
+    users.append({"name": name, "age": age})
+
+    with open(file_loc, "w")as f:
+         json.dump(users, f, indent=4)
+
+    print("\nUser Added.\n")
+
 
 def update_user():
      
@@ -54,6 +79,7 @@ def update_user():
 
     with open(file_loc, "w")as f:
             json.dump(users, f, indent=4)
+
             
 def delete_user():
     delete_name = input("Enter name to delete: ").strip().title()
@@ -95,3 +121,6 @@ while True:
 
     elif selection == "update data":
          update_user()
+
+    elif selection == "add data":
+         add_user()
