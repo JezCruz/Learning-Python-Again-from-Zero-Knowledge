@@ -32,10 +32,6 @@
         "age": 21
     },
     {
-        "name": "James",
-        "age": 22
-    },
-    {
         "name": "Luffy",
         "age": 30
     },
@@ -46,5 +42,9 @@
     {
         "name": "Cong Tv",
         "age": 32
+    },
+    {
+        "name": "James",
+        "age": 23
     }
 ]

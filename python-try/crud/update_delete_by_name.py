@@ -84,21 +84,36 @@ def update_user():
 def delete_user():
     delete_name = input("Enter name to delete: ").strip().title()
 
-    found = False
+    matches = []
 
-
-    for user in users:
+    for i, user in enumerate(users):
         if user["name"] == delete_name:
-            users.remove(user)
-            print("User Deleted!")
-            found = True
-            break
-    if not found:
-        print(f"No user named, '{delete_name}'.")
+            matches.append((i, user))
 
-    with open(file_loc, "w")as f:
-        json.dump(users, f, indent=4)
+    if not matches:
+        print(f"No user named '{delete_name}'.")
+        return
 
+    print("\nMatches found:")
+    for num, (real_index, user) in enumerate(matches, start=1):
+        print(f"{num}. Name: {user['name']}, Age: {user['age']}")
+
+    try:
+        choice = int(input("\nChoose user number to delete: ")) - 1
+
+        if 0 <= choice < len(matches):
+            real_index = matches[choice][0]
+            deleted_user = users.pop(real_index)
+
+            print(f"\nDeleted: {deleted_user['name']} - {deleted_user['age']}")
+
+            with open(file_loc, "w") as f:
+                json.dump(users, f, indent=4)
+        else:
+            print("Invalid selection.")
+
+    except ValueError:
+        print("Please enter a valid number.")
 
 while True:
     selection = input("enter function: ").strip().lower()
