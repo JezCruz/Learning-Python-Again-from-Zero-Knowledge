@@ -54,30 +54,35 @@ def update_user():
 
     with open(file_loc, "w")as f:
             json.dump(users, f, indent=4)
+            
+def delete_user():
+    delete_name = input("Enter name to delete: ").strip().title()
+
+    found = False
+
+
+    for user in users:
+        if user["name"] == delete_name:
+            users.remove(user)
+            print("User Deleted!")
+            found = True
+            break
+    if not found:
+        print(f"No user named, '{delete_name}'.")
+
+    with open(file_loc, "w")as f:
+        json.dump(users, f, indent=4)
+
 
 while True:
     selection = input("enter function: ").strip().lower()
 
     if selection == "exit":
-             print("Goodbye!")
+             print("\nGoodbye!\n")
              break
+    
     elif selection == "delete":
-        delete_name = input("Enter name to delete: ").strip().title()
-
-        found = False
-
-
-        for user in users:
-            if user["name"] == delete_name:
-                users.remove(user)
-                print("User Deleted!")
-                found = True
-                break
-        if not found:
-            print(f"No user named, '{delete_name}'.")
-
-        with open(file_loc, "w")as f:
-            json.dump(users, f, indent=4)
+        delete_user()
 
     elif selection == "ping":
          ping()
