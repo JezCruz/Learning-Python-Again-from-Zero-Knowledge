@@ -49,36 +49,40 @@ def add_user():
 
 
 def update_user():
-     
-    select_name = input("Search User name want's to update: ").strip().title()
+    if not users:
+        print("\nNo users to update.\n")
+        return
 
-    found = False
+    print("\n+++++++++++++ Users List +++++++++++++\n")
+    for i, user in enumerate(users, start=1):
+        print(f"{i}. Name: {user['name']}, Age: {user['age']}")
 
-    for user in users:
-        if select_name == user["name"]:
-            print("User Named", select_name, "found!, and able to update.\n")
-        
-            update_name = input("Enter your updated name: ").strip().title()
+    try:
+        update_index = int(input("\nEnter user number to update: ")) - 1
+
+        if 0 <= update_index < len(users):
+            new_name = input("Enter updated name: ").strip().title()
 
             while True:
-                update_age = input("Enter your updated age: ").strip()
-                if update_age.isdigit():
-                    update_age = int(update_age)
+                new_age = input("Enter updated age: ").strip()
+                if new_age.isdigit():
+                    new_age = int(new_age)
                     break
                 else:
-                    print("Invalid age.")         
+                    print("Invalid age. Numbers only.")
 
-            user["name"] = update_name
-            user["age"] = update_age
+            users[update_index]["name"] = new_name
+            users[update_index]["age"] = new_age
 
-            print("User Updated!")
-            found = True
-            break
-    if not found:
-            print("User not found.")
+            with open(file_loc, "w") as f:
+                json.dump(users, f, indent=4)
 
-    with open(file_loc, "w")as f:
-            json.dump(users, f, indent=4)
+            print("\nUser updated successfully!\n")
+        else:
+            print("\nInvalid user number.\n")
+
+    except ValueError:
+        print("\nPlease enter a valid number.\n")
 
             
 def delete_user():
