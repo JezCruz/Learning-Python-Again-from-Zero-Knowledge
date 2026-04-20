@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "task": "Learn Python",
+    "priority": "high",
+    "completed": false,
+    "created": "2026-03-28T10:15:44.112661"
+  },
+  {
+    "id": 2,
+    "task": "Build CLI tools",
+    "priority": "high",
+    "completed": false,
+    "created": "2026-03-28T10:15:46.318237"
+  },
+  {
+    "id": 3,
+    "task": "Write documentation",
+    "priority": "normal",
+    "completed": false,
+    "created": "2026-03-28T10:15:46.482342"
+  }
+]
