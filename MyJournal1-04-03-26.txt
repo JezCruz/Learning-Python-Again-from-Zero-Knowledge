@@ -1,0 +1,147 @@
+Learning simple python code or functions.
+
+print first "Hello World!". - ✅
+
+add variable and values then print. - ✅
+
+
+Python fundamentals: Data Types of Numbers. ✅
+
+Numbers has 3 numeric data types:
+ - integer - integer
+ - floating point - floats
+ - complex numbers
+
+Division Operator automatically gaves floats.
+
+
+
+String Concatenation - ✅
+this will show you how to combines 2 or more string or words using +.
+
+
+
+Converting Data types into String for Concatenation. - ✅
+in this part we will see how to use str() to convert any Data types into string.
+
+
+
+05-03-26 - MyJournal.
+Getting User Inputs Using The Input() Function. - ✅
+in this part we need to try Input() function. inestead of adding variables.
+example:
+    fname = input("Enter Your First Name: ")
+    print(fname)
+
+
+
+Converting Data Types - ✅
+example: 
+    print('fishball: 15 pesos per sticks')
+
+    numstick = input('how many sticks? ')
+    cash = input('how much your cash? ')
+
+    total = int(numstick) * 15
+    change = cash - total
+
+    print('your order is '+ numstick + ' sticks of fishballs' + ' total of ' + total + ' your cash is ' + cash + ' so you have change of ' + change)
+
+    #the fullcode with float() and round() in test7.py
+
+
+reflection:
+    I learned how to add int() as input function.
+    I learned how to add float() for decimal values.
+    I learned how to use round() function to round the total, cash, and change to 2 decimal places for better presentation.
+
+
+
+Comparison Operators - ✅
+    Operator  | Description
+    ==          Equal to
+    <           Less than 
+    >           Greater than
+    <=          Less than or Equal
+    >=          Greater than or Equal
+    !=          Not Equal to
+
+
+
+
+Logical Operators - ✅
+    Logical Operator:  |  Description:                |  Example:
+    and                |  if x and y are true = True  |  x and y
+    or                 |  if x or y are true = True   |  x or y
+    not                |  if x is false = True        |  not x
+
+        and - in this logical operator if the two statement are "True" the output is "True"
+        so if the one statement becomes "False" even the one is "True" the output will becomes "False".
+
+        or - in this logical operator if the statement are "True" and "False" the output will become "True".
+
+        not - in this logical operator if the statement are "True" if you use this operator, the output will become "False". (vise versa)
+
+
+
+
+If and Else-IF - ✅
+(IF ELIF ELSE)
+    if → first condition
+    elif → additional conditions
+    else → kapag walang nag match
+
+
+
+
+11-03-26:
+
+Control Flow - 
+
+Loops:
+    for
+    while
+    break
+    continue
+
+example Loops:
+
+for:
+    for i in range(5):
+    print("Hello", i)
+
+example loop:
+    for i in range(5):
+    print("Hello")
+
+    Output:
+    Hello
+    Hello
+    Hello
+    Hello
+    Hello
+
+Explanation: range(5) = 0,1,2,3,4 
+- So loop runs 5 times.
+
+Example with numbers:
+    for i in range(1,6):
+    print(i)
+
+    Output:
+    1
+    2
+    3
+    4
+    5
+
+The stop value (6) is exclusive, meaning it is not included in the range.
+
+
+while example:
+    count = 1
+
+    while count <= 5:
+        print(count)
+        count += 1
+
